@@ -114,7 +114,7 @@ Runner.config = {
   GRAVITY: 0.6,
   INITIAL_JUMP_VELOCITY: 12,
   MAX_CLOUDS: 6,
-  MAX_OBSTACLE_LENGTH: 1,
+  MAX_OBSTACLE_LENGTH: 3,
   MAX_OBSTACLE_DUPLICATION: 1,
   MAX_SPEED: 13,
   MIN_JUMP_HEIGHT: 35,
@@ -131,7 +131,7 @@ Runner.config = {
  */
 Runner.defaultDimensions = {
   WIDTH: DEFAULT_WIDTH,
-  HEIGHT: 250
+  HEIGHT: 180
 };
 
 
@@ -1214,7 +1214,7 @@ function Obstacle(canvasCtx, type, spriteImgPos, dimensions,
   this.spritePos = spriteImgPos;
   this.typeConfig = type;
   this.gapCoefficient = gapCoefficient;
-  this.size = getRandomNum(1, Obstacle.MAX_OBSTACLE_LENGTH);
+  this.size = getRandomNum(3, Obstacle.MAX_OBSTACLE_LENGTH);
   this.dimensions = dimensions;
   this.remove = false;
   this.xPos = 0;
@@ -1241,7 +1241,7 @@ Obstacle.MAX_GAP_COEFFICIENT = 1.5;
  * Maximum obstacle grouping count.
  * @const
  */
-Obstacle.MAX_OBSTACLE_LENGTH = 1,
+Obstacle.MAX_OBSTACLE_LENGTH = 3,
 
 
 Obstacle.prototype = {
