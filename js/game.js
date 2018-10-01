@@ -1193,7 +1193,7 @@ function CollisionBox(x, y, w, h) {
   this.y = y;
   this.width = w;
   this.height = h;
-};
+}
 
 
 //******************************************************************************
@@ -1204,7 +1204,7 @@ function CollisionBox(x, y, w, h) {
  * @param {Obstacle.type} type
  * @param {Object} spriteImgPos Obstacle position in sprite.
  * @param {Object} dimensions
- * @param {number} gapCoefficient Mutipler in determining the gap.
+ * @param {number} gapCoefficient Multiplier in determining the gap.
  * @param {number} speed
  */
 function Obstacle(canvasCtx, type, spriteImgPos, dimensions,
@@ -1229,7 +1229,7 @@ function Obstacle(canvasCtx, type, spriteImgPos, dimensions,
   this.timer = 0;
 
   this.init(speed);
-};
+}
 
 /**
  * Coefficient for calculating the maximum gap.
@@ -1483,7 +1483,7 @@ function Trex(canvas, spritePos) {
   this.jumpspotX = 0;
 
   this.init();
-};
+}
 
 
 /**
